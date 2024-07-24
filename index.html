@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji Gallery Assignment</title>
+    <title>Persistent Preferences</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <nav class="main-navbar">
-        <div class="center-navbar">
-            <span class="nav-item">Emoji</span>
-        </div>
-    </nav>
+    <div class="container">
+        <h1>My List</h1>
+        <ul id="item-list">
+            <li>Below is the list of the items </li>
+        </ul>
+        
+        <div id="preferences-panel">
+            <h2>Preferences</h2>
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="colorful">Colorful</option>
+            </select>
 
-    <div class="container-emoji">
-        <section id="grid-emoji"></section>
+            <label for="list-style-select">List Style:</label>
+            <select id="list-style-select">
+                <option value="disc">Disc</option>
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+            </select>
+        </div>
     </div>
 
     <script src="script.js"></script>
